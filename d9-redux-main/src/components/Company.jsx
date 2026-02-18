@@ -1,8 +1,6 @@
 import { Row, Col } from "react-bootstrap";
 import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
-import { useSelector } from "react-redux";
-import { useState } from "react";
 
 const Company = ({ company }) => {
   const dispatch = useDispatch();
