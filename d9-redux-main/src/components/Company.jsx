@@ -12,8 +12,9 @@ const Company = ({ company }) => {
 
       <Col xs={1} className="text-center">
         <i
+          id="remove"
           title="Remove from favourites"
-          className="bi bi-x-circle-fill text-danger fs-5"
+          className="bi bi-x-circle-fill fs-5"
           style={{ cursor: "pointer" }}
           onClick={() => {
             dispatch({

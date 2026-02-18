@@ -10,7 +10,7 @@ const FavouritesPage = () => {
         <Col xs={10} className="mx-auto my-3">
           <h1 className="display-1 text-center">Favourites Companies</h1>
         </Col>
-        <Col xs={7} className="mx-auto mb-5">
+        <Col xs={9} className="mx-auto mb-5">
           {favouritesList.length !== 0 && favouritesList.map((company, i) => <Company key={"company" + i} company={company} />)}
           {favouritesList.length === 0 && (
             <Alert variant="danger" className="mt-2">
