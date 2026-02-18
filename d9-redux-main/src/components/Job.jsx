@@ -12,7 +12,9 @@ const Job = ({ data }) => {
       <Col xs={1}>
         <i
           title="Add to favourites"
-          className={favouritesList.includes(data.company_name) ? "bi bi-suit-heart-fill text-danger" : "bi bi-suit-heart text-secondary text-opacity-50"}
+          className={
+            favouritesList.includes(data.company_name) ? "bi bi-suit-heart-fill text-danger fs-5" : "bi bi-suit-heart text-secondary text-opacity-50 fs-5"
+          }
           style={{ cursor: "pointer" }}
           onClick={() => {
             if (!favouritesList.includes(data.company_name)) {
