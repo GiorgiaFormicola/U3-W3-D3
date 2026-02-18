@@ -1,7 +1,6 @@
 import { Row, Col } from "react-bootstrap";
 import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
-
 import { useSelector } from "react-redux";
 
 const Job = ({ data }) => {
@@ -12,6 +11,7 @@ const Job = ({ data }) => {
     <Row className="mx-0 mt-3 p-3 align-items-center" style={{ border: "1px solid #00000033", borderRadius: 4 }}>
       <Col xs={1}>
         <i
+          title="Add to favourites"
           className={favouritesList.includes(data.company_name) ? "bi bi-suit-heart-fill text-danger" : "bi bi-suit-heart text-secondary text-opacity-50"}
           style={{ cursor: "pointer" }}
           onClick={() => {
